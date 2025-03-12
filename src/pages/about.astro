@@ -1,24 +1,12 @@
 ---
-
+import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Quien es Mechacat";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>0800cats - Sobre mi</title>
-	</head>
-	<body>
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
-		<h1>Sobre mi</h1>
-		<p>Mi nombre es <b>Catriel</b> pero usualmente me dicen Cats, Mechacat o simplemente Mecha.</p>
-        <p>Tengo 33 años y vivo en Argentina.</p>
-        <p>Cuando me preguntan que soy o que hago me cuesta mucho definirlo, asi que digo que: hago muchas cosas. Tengo multiples intereses.</p>
-        <p>Soy analista de ciberseguridad, productor musical, streamer, gamer, mago aficionado y seguramente alguna cosa más.</p>
-        <p>De ahí que exista este sitio: mi rincon en la Internet para compartir mis intereses y lo que hago con el mundo.</p>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<p>Mi nombre es <b>Catriel</b> pero usualmente me dicen Cats, Mechacat o simplemente Mecha.</p>
+    <p>Tengo 33 años y vivo en Argentina.</p>
+    <p>Cuando me preguntan que soy o que hago me cuesta mucho definirlo, asi que digo que: hago muchas cosas. Tengo multiples intereses.</p>
+    <p>Soy analista de ciberseguridad, productor musical, streamer, gamer, mago aficionado y seguramente alguna cosa más.</p>
+    <p>De ahí que exista este sitio: mi rincon en la Internet para compartir mis intereses y lo que hago con el mundo.</p>
+  </BaseLayout>
